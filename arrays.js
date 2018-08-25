@@ -8,6 +8,6 @@ function addElementToBeginningOfArray(A, b) {
 }
 
 function destructivelyAddElementToBeginningOfArray(A, b) {
-  var A = [b, ...A];
+  A.unshift(b);
   return A;
 }
