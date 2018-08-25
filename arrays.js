@@ -2,7 +2,6 @@ var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
 var A = ['1','2','3'];
 var b = 'b';
-var B = new Array();
 
 function addElementToBeginningOfArray(A, b) {
   return [b, ...A];
@@ -37,6 +36,6 @@ function removeElementFromBeginningOfArray(A) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(A) {
-  A = A.pop(1);
+  A = A.slice(-1);
   return A;
 }
