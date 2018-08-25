@@ -11,3 +11,12 @@ function destructivelyAddElementToBeginningOfArray(A, b) {
   A.unshift(b);
   return A;
 }
+
+function addElementToBeginningOfArray(A, b) {
+  return [...A, b];
+}
+
+function destructivelyAddElementToBeginningOfArray(A, b) {
+  A.push(b);
+  return A;
+}
